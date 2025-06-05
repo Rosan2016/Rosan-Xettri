@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+   
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="asset/img/logo/RX2061.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Question Portal with real-time collaboration">
+    <title>Question Portal - Login</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="rxasset/css/mainlogin.css">
+    
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Login Container -->
+    <div class="login-container">
+        <div class="login-box">
+            <div class="text-center mb-4">
+                <img src="asset/img/logo/rx.png" alt="Logo" class="login-logo">
+                <h1>Rosan Xettri <br>Login Page </h1>
+                <p class="text-muted">Please inter id or password given by admin </p>
+            </div>
+             <a href="index.html" class="btn btn-primary w-100 login-text">Back to home</a>
+            
+            <form id="loginForm" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">User ID</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control dark-input" id="username" required>
+                        <div class="invalid-feedback">
+                            Please enter your username
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                        <input type="password" class="form-control dark-input" id="password" required>
+                        <button class="btn btn-outline-secondary toggle-password" type="button" aria-label="Toggle password visibility">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                        <div class="invalid-feedback">
+                            Please enter your password
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-card-heading"></i></span>
+                        <input type="text" class="form-control dark-input" id="name" placeholder="(Optional)">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">
+                    <span class="login-text">Login</span>
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                </button>
+                <div id="loginError" class="alert alert-danger mt-3 d-none"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden until login) -->
+    <div id="mainContent" class="d-none">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="asset/img/logo/RX2061.png" alt="Logo" class="navbar-logo me-2">
+                    <span>RX | Question BANK</span>
+                </a>
+                
+                <div class="d-flex align-items-center">
+                    <!-- User Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-link text-white p-0 d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                            <div class="me-2 d-flex align-items-center">
+                                <div class="avatar-sm bg-accent text-white rounded-circle d-flex align-items-center justify-content-center">
+                                    <span id="userInitials">U</span>
+                                </div>
+                            </div>
+                            <span id="loggedInUser" class="me-1"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="userDropdown">
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="bi bi-box-arrow-right me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Questions Section -->
+            <section class="content-section" id="questionsSection">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Question Bank</h2> 
+                </div>
+
+                <div class="row" id="questionCards">
+                    <!-- Question cards will be inserted here by JavaScript -->
+                </div>
+                
+                <div id="noResults" class="text-center py-5 d-none"></div>
+            </section>
+            
+           
+
+        <!-- Toast Notifications Container -->
+        <div class="toast-container"></div>
+
+    <!-- JavaScript Libraries -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <!-- Main Application Script -->
+    <script src="rxasset/js/mainlogin.js"></script>
+</body>
+</html>
