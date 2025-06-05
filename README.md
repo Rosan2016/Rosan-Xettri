@@ -1,29 +1,46 @@
 Name: Rosan Khattri Chettri
-
 Location: Banganga-10, Kapilvastu, Pakadiya Chapa, Nepal
-
 Website: www.rosankc.com.np
+Email: rkc242855@gmail.com
 
-Introduction:
+👋 Introduction
+Hey there! I’m Rosan KC—a passionate web designer and game developer from Nepal with a creative spark and a tech-driven mind. Over the past few years, I’ve been blending design, animation, and code to create visually stunning and interactive digital experiences. Whether it’s building sleek websites, crafting animations, or designing game UIs, I thrive on turning ideas into engaging realities.
 
-Hello, my name is Rosan KC. I am a passionate web designer and game developer from Nepal. Over the past few years, I have honed my skills in graphic design, animation, and web development, bringing creativity to every project I undertake. From designing business cards to developing dynamic websites, I enjoy creating interactive and visually appealing user experiences.
+💻 Skills & Expertise
+Web Design & Development
+HTML, CSS, JavaScript – responsive and dynamic websites with clean code and creative flair.
 
-Skills and Expertise:
+Graphics Design
+Business cards, logos, identity cards, certificates – sharp, professional, and brand-focused designs.
 
-Web Design & Development: HTML, CSS, JavaScript
-Graphics Design: Business cards, logos, identity cards, certificates
-Animation: Short videos and dynamic web animations
-Game Development: Engaging and immersive gaming interfaces
-Payment Integration Systems: eSewa, IME, Khalti, e-banking for web-based projects
-Experience:
-
-3+ years of experience as a graphic designer
-Developed and maintained several dynamic web applications
-Created game-related purchase systems with integrated payment methods
-Hobbies:
-
-Gaming
-Coding and exploring new tech trends
 Animation
-Designing creative content for both web and game projects
-For more information or to explore my portfolio, visit www.rosankc.com.np or email me at rkc242855@gmail.com.
+Short videos, animated content, and dynamic web animations to bring your digital presence to life.
+
+Game Development
+Immersive UI/UX for games with engaging mechanics and seamless interactivity.
+
+Payment Integration
+Seamless integration with eSewa, Khalti, IME Pay, and e-Banking systems for web-based applications.
+
+📈 Experience
+3+ years of hands-on experience in graphic design and digital media
+
+Built and maintained multiple interactive websites and web apps
+
+Developed game purchase systems with full online payment integration
+
+Consistently delivering client projects with creativity, precision, and a touch of boldness
+
+🎮 Hobbies & Interests
+Gaming (obviously!)
+
+Experimenting with new tech tools and frameworks
+
+Animation and storytelling through design
+
+Creating unique digital content that blends design and development
+
+🔗 Let's Connect
+Want to see my work or collaborate on a project?
+Visit: www.rosankc.com.np
+Or drop me a message at: rkc242855@gmail.com
