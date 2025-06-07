@@ -25,10 +25,10 @@ const questions = [
   },
   {
     question: "5<br> ",
-    options: { a: "", b: "", c: "", d: "" },
+    options: { a: "자동차 입니다.", b: "전화기 입니다.", c: " 냉장고 입니다.", d: "세탁기 입니다." },
     answer: "c",
     explanation: "",
-    image: "rxasset/QSM3/img/"
+    image: "rxasset/QSM3/img/img1.jpg"
   },
   {
     question: " 6<br>가게에 갑니다. 모자를 삽니다.",
@@ -55,10 +55,10 @@ const questions = [
     explanation: "Review Not aviable."
   },{
     question: "10<br> ",
-    options: { a: "", b: "", c: "", d: "" },
+    options: { a: "신발장 입니다.", b: "식탁 입니다.", c: " 옷장 입니다.", d: "주스 입니다." },
     answer: "c",
     explanation: "",
-    image: "rxasset/QSM3/img/"
+    image: "rxasset/QSM3/img/img2.jpg"
   },
   {
     question: " 11<br>한국 가수를 좋아합니다. 매일 한국 ------를 듣습니다. ",
@@ -87,10 +87,10 @@ const questions = [
   },
   {
     question: "15<br> ",
-    options: { a: "", b: "", c: "", d: "" },
+    options: { a: "버스 입니다.", b: " 기차 입니다", c: "택시 입니다.", d: "차 입니다." },
     answer: "c",
     explanation: "",
-    image: "rxasset/QSM3/img/"
+    image: "rxasset/QSM3/img/img3.jpg"
   },
   {
     question: " 16<br>저는 볼펜이 없습니다. 연필----있습니다. ",
@@ -118,146 +118,149 @@ const questions = [
   },
   {
     question: "20<br> ",
-    options: { a: "", b: "", c: "", d: "" },
+    options: { a: "나라", b: "도시", c: "지도", d: "집" },
     answer: "c",
     explanation: "",
-    image: "rxasset/QSM3/img/"
+    image: "rxasset/QSM3/img/img4.jpg"
   },
   {
     question: "21<br> 듣고 가장 알맞은 것을 고르십시오.",
     options: { a: "당신의 여동생이 이름은 뭐 입니까 ?", b: " 단신의 여동생 있어요 ?", c: "제 여동생 열다섯 살 입니다.", d: "오늘 여동생랑 시장 갑니다." },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio1.mp3"
+    audio: "rxasset/QSM3/audio/audio1.mp3"
   },
   {
     question: "22<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "이 지갑의 다섯 원 입니다 .", b: "이 양말 오백 원 입니다 .", c: "이 모자 오백 원 입니다 .", d: "이 지갑의 오백 원 입니다 ." },
+    options: { a: "이 소 다섯 원 입니다 .", b: "이 양말 오백 원 입니다 .", c: "이 모자 오백 원 입니다 .", d: "이 지갑 오백 원 입니다 ." },
     answer: "d",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio2.mp3"
+    audio: "rxasset/QSM3/audio/audio2.mp3"
   },
   {
     question: "23<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "이 가방은 소의 입니다.", b: "이 가방 제는 입니다.", c: "이 소 제는 입니다.", d: "이 가방 없어요." },
-    answer: "b",
+    options: { a: "이  소 입니다.", b: "이 가방  입니다.", c: "이 물소  입니다.", d: "이 사람 입니다." },
+    answer: "d",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio3.mp3"
+    audio: "rxasset/QSM3/audio/audio3.mp3"
   },
   {
     question: "24<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "제  이름은 깨 시 로선 입니다 .", b: "제 남동생 이름은 깨 시 로선 입니다 .", c: "제 친구 이름은 깨 시 로선 입니다 .", d: "제 아버지 이름은 깨 시 로선 입니다 ." },
+    options: { a: "제 여동생이 없어요.", b: "제 누나이 없어요.", c: "제 남동생이 없어요.", d: "제 할머니이 없어요." },
     answer: "c",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio4.mp3"
+    audio: "rxasset/QSM3/audio/audio4.mp3"
   },
   {
     question: "25<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "당신이 음식을 요리해요.", b: "저는 뭐 해요 ?", c: "당신 어디 갑니까 ?", d: "아이구 ,뭐 일어나요 ." },
+    options: { a: "당신이 음식을 요리하세요.", b: "저는 집에 갑니다 .", c: "당신 어디 갑니까 ?", d: "아이구 ,뭐 생겨요 ?" },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio5.mp3"
+    audio: "rxasset/QSM3/audio/audio5.mp3"
   },
   {
     question: "26<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "당신을 물소 고기를 먹고 좋아요 ?", b: "당신을 고기를 먹고 좋아요 ?", c: "저는 고기를 먹고 싶어요.", d: "이 고기는 뭣은 입니까 ?" },
+    options: { a: "어디 가고 싶어요 ?", b: "닭 고기를 먹을래요 ?", c: "저는 고기를 먹고 싶어요.", d: "이 고기는 뭣은 입니까 ?" },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio6.mp3"
+    audio: "rxasset/QSM3/audio/audio6.mp3"
   },
   {
     question: "27<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "당신은 집에 갑니까 ?", b: "당신에 이름은 뭐 입니까 ?", c: "어디 갑니까 ?", d: "당신의 집 어디로 있습니까 ?" },
+    options: { a: "안녕하세요.", b: "제 친구 집에 갑니다 .", c: "안녕하세요 ,제 이름은 깨 시 로선 입니다 .", d: "안녕하세요 ,저는 집에 갑니다 ." },
     answer: "d",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio7.mp3"
+    audio: "rxasset/QSM3/audio/audio7.mp3"
   },
   {
     question: "28<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "내일 갑니다.", b: "당신이 오늘 뭣은 먹습니까 ?", c: "식당에 먹습나다.", d: "닥 고기를 먹습니다." },
+    options: { a: "네 , 저를 닭고기 좋아해요.", b: "네 , 저는 너를 사랑합니다.", c: "네 , 저는 집에 가고 싶어요.", d: "이 장미꽃 저를 많이 좋아해요." },
     answer: "b",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio8.mp3"
+    audio: "rxasset/QSM3/audio/너이 저를 사랑 합니까.mp3"
   },
   {
     question: "29<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "물소 입니까 ?", b: "비행기 입니다.", c: "제 친구 입니다 .", d: "소 입니다." },
+    options: { a: "여기에서 시장까지 일시 십분 걸렀어요", b: "여기에서 시장까지 일십 열분 걸렀어요", c: "여기에서 시장까지 한시 십분 걸렀어요", d: "여기에서 시장까지 한시 열분 걸렀어요" },
     answer: "c",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio9.mp3"
+    audio: "rxasset/QSM3/audio/여기에서 시장까지 얼마나 걸렀어요.mp3"
   },
   {
     question: "30<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "아이구 이 사람은 않이 바배 있어요 .", b: "아이구 이 사람은 않이 소 있어요 .", c: "아이구 이 사람은 바배 있어요 .", d: "아이구  사람은 않이  있어요 ." },
+    options: { a: "이 시발은 구십구 원 입니다.", b: "이 시발은 아흔아홉 원 입니다.", c: "이 시발은 구십구 돈 입니다.", d: "이 시발은 아흔아홉 돈 입니다." },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio10.mp3"
+    audio: "rxasset/QSM3/audio/이 신발을 얼마 입니까.mp3"
   },
   {
     question: "31<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "그 사람은 누구 밉니까 ?", b: "남동생 입니다.", c: "여동생 입니다 .", d: "당신의 남동생 있습니까 ?" },
+    options: { a: "저는 스물 살 년 입니다.", b: "저는 이십 살 입니다.", c: "저는 이십 살 년 입니다.", d: "저는 스물 살 입니다." },
     answer: "d",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio11.mp3"
+    audio: "rxasset/QSM3/audio/몇 살 입니까.mp3"
   },
   {
     question: "32<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "집에 가.", b: "저는 뭣은 해요 ?", c: "빨리 하라.", d: "뭐 입니까 ?" },
+    options: { a: "아니요 , 저는 물소 고기를 먹지않아요.", b: "네 , 저는 닭고기를 먹고 싶어요.", c: "불고기를 좋아해요.", d: "이 고기는 뭐의 입니까 ?" },
     answer: "b",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio12.mp3"
+    audio: "rxasset/QSM3/audio/닭 고기를 먹을래요.mp3"
   },
   {
     question: "33<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "뭐 해요 ?", b: "왜 가요 ?", c: "당신 뭣은 싶어요 ?", d: "집에 갑니까 ?" },
+    options: { a: "괜찮아요.", b: "만나서 반갑습니다.", c: "네팔 나라에서 왔어요.", d: "외국에서 왔어요." },
     answer: "c",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio13.mp3"
+    audio: "rxasset/QSM3/audio/어느 나라에서 왔어요.mp3"
   },
   {
     question: "34<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "깨 시 로선 입니다 .", b: "친구 입니다.", c: "학생 입니다 .", d: "선생님 입니다." },
+    options: { a: "그럼 병원까지 갑시다.", b: "그럼 은행까지 갑시다.", c: "그럼 학교까지 갑시다.", d: "그럼 회사까지 갑시다." },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio14.mp3"
+    audio: "rxasset/QSM3/audio/머리가 많이 아파요.mp3"
   },
   {
     question: "35<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "내일 비가 와을거예요.", b: "저는 싶어요.", c: " 여자 많이 예쁘어요.", d: "날시 많이 좋아요." },
+    options: { a: " 친구를 배고픈 것 같아요.", b: "친구들이 영화를 보는 것 같아요.", c: " 문제가 어려워 보여요.", d: "저를  많이 고팠어요." },
     answer: "d",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio15.mp3"
+    audio: "rxasset/QSM3/audio/당신을 무엇은 됐어요.mp3"
   },
   {
     question: "36<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "아녕하세요 .", b: "안녕하세요 , 저는 집에 갑니다 .", c: "몰라요 .", d: "어디 갑니까 ?" },
+    options: { a: "이 킬로 그램에 몇 그램 입니까 ?", b: "일 킬로 그램에 몇 그램 입니까 ?", c: "한 킬로 그램에 몇 그램 입니까 ?", d: "두 킬로 그램에 몇 그램 입니까 ?" },
     answer: "b",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio16.mp3"
+    audio: "rxasset/QSM3/audio/일 킬로 그램에 천 그램 입니다.mp3"
   },
   {
     question: "37<br> 듣고 가장 알맞은 것을 고르십시오.",
-    options: { a: "안녕하세요", b: "감사합니다", c: "네", d: "안녕하십니까" },
+    options: { a: "오전 몇 시 입니까 ?", b: "오후 몇 시 입니까 ?", c: "올해 몇 시 입니까 ?", d: "내일 몇 시 입니까 ?" },
+    answer: "b",
+    explanation: "Review not Aviable.",
+    audio: "rxasset/QSM3/audio/오후 네시 삼분 입니다.mp3"
+  },
+  {
+   question: "37<br> 듣고 가장 알맞은 것을 고르십시오.",
+    options: { a: "다음에 날씨 많이 좋알거에요.", b: "모래 비가 왈거에요.", c: "오늘 날씨 너무 좋아요.", d: "내일 날씨 좋알거에요" },
+    answer: "c",
+    explanation: "Review not Aviable.",
+    audio: "rxasset/QSM3/audio/오늘 날씨가 어떤 입니까.mp3"
+  },
+  {
+    question: "37<br> 듣고 가장 알맞은 것을 고르십시오.",
+    options: { a: "지금 얼마나 시 입니까 ?", b: "지금 누구 시 입니까 ?", c: "지금 뭐 시 입니까 ?", d: "지금 몇 시 입니까 ?" },
+    answer: "d",
+    explanation: "Review not Aviable.",
+    audio: "rxasset/QSM3/audio/지금 한시 십분 입니다.mp3"
+  },
+  {
+    question: "37<br> 듣고 가장 알맞은 것을 고르십시오.",
+    options: { a: "지금 다섯 시 오분 입니다.", b: "지금 오시 오분 입니다.", c: "지금 오시 다섯분 입니다.", d: "지금 다섯시 다섯 분 입니다." },
     answer: "a",
     explanation: "Review not Aviable.",
-    audio: "rxasset/QSM2/audio/audio17.mp3"
-  },
-  {
-    question: " 38<br>가：더 드세요.<br>나：많이 먹었어요. _________이/가 불러서 더 먹을 수 없어요. ",
-    options: { a: "눈", b: "발", c: "입", d: "배" },
-    answer: "d",
-    explanation: "Review Not aviable."
-  },
-  {
-    question: " 39<br>가：이 약은 언제 먹는 거예요?<br>나：하루 세 ____ 드세요. 아침, 점심, 저녁 식사 후에 드시면 됩니다. ",
-    options: { a: "명", b: "번", c: " 장", d: "대" },
-    answer: "b",
-    explanation: "Review Not aviable."
-  },
-  {
-    question: " 40<br>가：지수 씨는 술을 잘 마셔요?<br>나：맥주 한 _____쯤은 마실 수 있어요. ",
-    options: { a: "마리", b: "대", c: "병", d: " 장" },
-    answer: "c",
-    explanation: "Review Not aviable."
+    audio: "rxasset/QSM3/audio/지금 몇 시 입니까.mp3"
   },
 ];
