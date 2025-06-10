@@ -727,6 +727,9 @@ body.light-theme .navbar {
 }
 
 @media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+  }
     .login-box {
         padding: var(--space-lg) var(--space-md);
     }
