@@ -3,6 +3,7 @@ const reviewedQuestions = new Set();
 const completedQuestions = new Set();
 const userAnswers = {}; // { questionNumber: "a" | "b" | ... }
 let quizSubmitted = false;
+const disabledAudios = new Set(); // Track which audios have been disabled
 
 // Show question content and options
 function showContent(num) {
@@ -24,10 +25,11 @@ function showContent(num) {
 
   if (q.audio) {
     html += `
-      <audio controls style="margin:10px 0; width:100%;">
+      <audio id="audio-${num}" controls style="margin:10px 0; width:100%; ${disabledAudios.has(num) ? 'display:none;' : ''}">
         <source src="${q.audio}">
         Your browser does not support the audio element.
       </audio>
+      ${disabledAudios.has(num) ? '<p>Audio already played</p>' : ''}
     `;
   }
 
@@ -45,7 +47,6 @@ function showContent(num) {
   }
   html += `</ul>`;
 
-  // Only show explanation if quiz is submitted
   if (quizSubmitted) {
     html += `
       <p><strong>Your Answer:</strong> ${userAnswers[num] || 'None'}</p>
@@ -56,6 +57,37 @@ function showContent(num) {
 
   contentDisplay.innerHTML = html;
   updateNumberHighlight();
+
+  // Auto-play audio 2 times after user clicks play
+  if (q.audio && !disabledAudios.has(num)) {
+    const audioElement = document.getElementById(`audio-${num}`);
+    let playCount = 0;
+
+    const endedHandler = function() {
+      playCount++;
+      if (playCount < 2) {
+        audioElement.currentTime = 0;
+        audioElement.play();
+      } else {
+        // Disable this audio for future plays
+        disabledAudios.add(num);
+        // Remove event listeners to prevent memory leak
+        audioElement.removeEventListener('ended', endedHandler);
+        audioElement.removeEventListener('play', playHandler);
+        // Refresh display to hide audio
+        showContent(num);
+      }
+    };
+
+    const playHandler = function() {
+      // When user clicks play → start tracking ended event
+      audioElement.removeEventListener('play', playHandler); // Only once
+      audioElement.addEventListener('ended', endedHandler);
+    };
+
+    // Wait for user to click play
+    audioElement.addEventListener('play', playHandler);
+  }
 }
 
 // Save user's selected answer
